@@ -1,12 +1,42 @@
 # How to use?
 
-## mdbook
+## install mdbook
+* [github](https://github.com/rust-lang/mdBook)
+* Installation tutorial reference [mdBook installation](https://rust-lang.github.io/mdBook/guide/installation.html)
 
+## create project
 
-Add the released file to your 'book/theme' dir
+```shell
+mkdir aptos-book
+cd aptos-book
+mdbook init
+```
+
+## put js into project
+-  put `move.js` into `misc` dir
+-  put `highlight.js` into `theme` dir
 
 You can see this repo for an example:
 
-[movebook](https://github.com/damirka/move-book/tree/master/theme)
+[aptos-book](aptos-book)
 
-At the end big thanks to [damirka](https://github.com/damirka/)
+##   move code use Move syntax segment
+
+\```move
+    /// move code
+\```
+
+
+## run project
+
+```shell
+    mdbook serve
+```
+
+![img.png](images/img.png)
+
+
+
+
+
+
